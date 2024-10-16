@@ -49,7 +49,7 @@ class ComprehensiveTestCases {
 	public static Collection<Object[]> createArrayMeanTestCases() {
 		Collection<Object[]> args = createArraySumTestCases();
 		for (Object[] array : args) {
-			@SuppressWarnings("unchecked")
+			//@SuppressWarnings("unchecked")
 			List<Integer> values = (List<Integer>) array[0];
 			int expectedSum = (Integer) array[1];
 			array[1] = expectedSum / (double) values.size();
